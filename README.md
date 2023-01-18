@@ -39,7 +39,7 @@ For MacOS, ensure that Homebrew is installed and then follow these steps in the 
 
 Once you have completed the OS-specific setup, launch your terminal (Git Bash on Windows) and complete the steps below to setup the project from the command line:
 
-`$ mkdir Projects`
+`$ mkdir Projects` (or whatever container folder suits you)
 
 `$ cd Projects`
 
@@ -77,9 +77,13 @@ Finally, from any environment:
 
 ### Flashing the Pi Pico
 
-Once the project successfully builds, there should now be a ‘blink.uf2’ in the ‘build’ directory. This file is the binary we will flash to the Pico. In order to flash this file, first hold down the BOOTSEL button on the Pico board while plugging it in to the USB interface. This will mount the Pico as a drive. Then copy the ‘blink.uf2’ file to the drive location and the Pico will automatically reboot and run the application. For example, if your drive location is D:, here is how to copy from the command line:
+Once the project successfully builds, there should now be a ‘app.uf2’ in the ‘build’ directory. This file is the binary we will flash to the Pico. 
 
-`$ cp blink.uf2 /d/`
+In order to flash this file, first hold down the BOOTSEL button on the Pico board while plugging it in to the USB interface. This will mount the Pico as a drive. 
+
+Then, copy the ‘app.uf2’ file to the drive location and the Pico will automatically reboot and run the application. For example, if your drive location is D:, here is how to copy from the command line:
+
+`$ cp app.uf2 /d/`
 
 ## Security
 
