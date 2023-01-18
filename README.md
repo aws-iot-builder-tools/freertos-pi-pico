@@ -53,6 +53,34 @@ Once you have completed the OS-specific setup, launch your terminal (Git Bash on
 
 `$ git clone https://github.com/aws-iot-builder-tools/freertos-pi-pico`
 
+### Building the Project
+
+`$ cd freertos-pi-pico/app`
+
+`$ mkdir build`
+
+`$ cd build`
+
+`$ cp ../main1.c ../main.c` (or whichever sample file you wish to build)
+
+For Windows only:
+
+`$ cmake -G "MinGW Makefiles" ..`
+
+For Linux or MacOS:
+
+`$ cmake ..`
+
+Finally, from any environment:
+
+`$ make`
+
+### Flashing the Pi Pico
+
+Once the project successfully builds, there should now be a ‘blink.uf2’ in the ‘build’ directory. This file is the binary we will flash to the Pico. In order to flash this file, first hold down the BOOTSEL button on the Pico board while plugging it in to the USB interface. This will mount the Pico as a drive. Then copy the ‘blink.uf2’ file to the drive location and the Pico will automatically reboot and run the application. For example, if your drive location is D:, here is how to copy from the command line:
+
+`$ cp blink.uf2 /d/`
+
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
