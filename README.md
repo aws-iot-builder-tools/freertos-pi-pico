@@ -9,6 +9,8 @@ Code samples from a blog series published on [Embedded Computing Design](https:/
 
 ### Setup and Instructions
 
+Setup and instructions differ slightly from Part 1 in the blog series. The blog series uses the project name "blink" whereas this repo uses "app" as the project name.
+
 #### Windows
 * Install Git (includes Bash terminal): https://git-scm.com/downloads
 * Install CMake: https://cmake.org/download/
@@ -49,7 +51,7 @@ Once you have completed the OS-specific setup, launch your terminal (Git Bash on
 
 `$ export FREERTOS_KERNEL_PATH=$PWD/FreeRTOS-Kernel`
 
-`git clone $https://github.com/aws-iot-builder-tools/freertos-pi-pico`
+`$ git clone https://github.com/aws-iot-builder-tools/freertos-pi-pico`
 
 ## Security
 
