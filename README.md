@@ -9,7 +9,47 @@ Code samples from a blog series published on [Embedded Computing Design](https:/
 
 ### Setup and Instructions
 
-See Part 1 from the blog series
+#### Windows
+* Install Git (includes Bash terminal): https://git-scm.com/downloads
+* Install CMake: https://cmake.org/download/
+* Install the Arm GNU Toolchain: https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain
+* Install Make using Chocolatey
+  * Chocolatey should already be installed from the Git install, otherwise install it: https://chocolatey.org/
+  * Run this from Git Bash: `$ choco install make`
+
+#### Linux
+All the tools we need, including Git and Make, should be available after installing these packages:
+
+`$ sudo apt install cmake`
+
+`$ sudo apt install gcc-arm-none-eabi`
+
+`$ sudo apt install build-essential`
+
+#### MacOS
+For MacOS, ensure that Homebrew is installed and then follow these steps in the Terminal:
+
+`$ brew install cmake`
+
+`$ brew tap ArmMbed/homebrew-formulae`
+
+`$ brew install arm-none-eabi-gcc`
+
+Once you have completed the OS-specific setup, launch your terminal (Git Bash on Windows) and complete the steps below to setup the project from the command line:
+
+`$ mkdir Projects`
+
+`$ cd Projects`
+
+`$ git clone https://github.com/RaspberryPi/pico-sdk --recurse-submodules`
+
+`$ git clone -b smp https://github.com/FreeRTOS/FreeRTOS-Kernel --recurse-submodules`
+
+`$ export PICO_SDK_PATH=$PWD/pico-sdk`
+
+`$ export FREERTOS_KERNEL_PATH=$PWD/FreeRTOS-Kernel`
+
+`git clone $https://github.com/aws-iot-builder-tools/freertos-pi-pico`
 
 ## Security
 
