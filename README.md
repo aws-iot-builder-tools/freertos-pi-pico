@@ -1,11 +1,15 @@
-## My Project
+## Using FreeRTOS with the Raspberry Pi Pico
 
-TODO: Fill this README out!
+Code samples from a blog series published on [Embedded Computing Design](https://embeddedcomputing.com/) covering various topics like environment setup, multitasking, queues, message buffers, semaphores, event-driven design, and symmetric multiprocessing (SMP). 
 
-Be sure to:
+[Part 1](https://embeddedcomputing.com/technology/open-source/linux-freertos-related/using-freertos-with-the-raspberry-pi-pico) | 
+[Part 2](https://embeddedcomputing.com/technology/open-source/linux-freertos-related/using-freertos-with-the-raspberry-pi-pico-part-2) | 
+[Part 3](https://embeddedcomputing.com/technology/open-source/linux-freertos-related/using-freertos-with-the-raspberry-pi-pico-part-3) | 
+[Part 4](https://embeddedcomputing.com/technology/open-source/linux-freertos-related/using-freertos-with-the-raspberry-pi-pico-part-4)
 
-* Change the title in this README
-* Edit your repository description on GitHub
+### Setup and Instructions
+
+See Part 1 from the blog series
 
 ## Security
 
