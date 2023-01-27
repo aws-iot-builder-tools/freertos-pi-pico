@@ -19,9 +19,9 @@ Setup and instructions differ slightly from Part 1 in the blog series. The blog 
   * Chocolatey should already be installed from the Git install, otherwise install it: https://chocolatey.org/
   * Run these commands from an Administrator Command Prompt:
   
-    `$ choco install make`
+    `> choco install make`
     
-    `$ choco install mingw`
+    `> choco install mingw`
 
 #### Linux
 All the tools we need, including Git and Make, should be available after installing these packages:
