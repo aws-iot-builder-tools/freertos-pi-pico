@@ -15,9 +15,13 @@ Setup and instructions differ slightly from Part 1 in the blog series. The blog 
 * Install Git (includes Bash terminal): https://git-scm.com/downloads
 * Install CMake: https://cmake.org/download/
 * Install the Arm GNU Toolchain: https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain
-* Install Make using Chocolatey
+* Install Make and MinGW using Chocolatey
   * Chocolatey should already be installed from the Git install, otherwise install it: https://chocolatey.org/
-  * Run this from Git Bash: `$ choco install make`
+  * Run these commands from an Administrator Command Prompt:
+  
+    `$ choco install make`
+    
+    `$ choco install mingw`
 
 #### Linux
 All the tools we need, including Git and Make, should be available after installing these packages:
